@@ -16,7 +16,6 @@ def dnsmasq():
         "--bind-dynamic",
         "--except-interface=lo",
         "--conf-file",
-        "--no-hosts",
     ]
 
     try:

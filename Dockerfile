@@ -43,5 +43,8 @@ COPY --from=python-buildstep /root/.local /root/.local
 # Insert application
 COPY src .
 
+# Insert /etc/hosts
+COPY etc_hosts /etc/hosts
+
 # Run the start script
 CMD ["sh", "start.sh"]
